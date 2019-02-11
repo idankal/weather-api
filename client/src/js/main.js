@@ -13,7 +13,7 @@ import '../css/style.css'
 window.onload = () => {
 
   const proxy = 'https://cors-anywhere.herokuapp.com/',
-        api = `${proxy}https://api.darksky.net/forecast/bf24faeb61b1b888ec45ae372d9009b4/`
+        api = ``
 
   const showPosition = position => {
     let lat = position.coords.latitude,
