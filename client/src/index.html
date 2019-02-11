@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="bundle.css" rel="stylesheet"></head>
+  <body>
+
+    <main id="main">
+
+        <div id="forecast">
+            <div>
+                <div id="timezone"></div>
+                <canvas id="icon" width="128" height="128"></canvas>
+            </div>
+            <div id="wrapTemp">
+              <div id="temperature"> </div>
+              <div id="summary"></div>
+            </div>
+        </div>
+
+        <div class="container">
+          <canvas id="myChart"></canvas>
+        </div>
+
+        <button type="button" class="waves-effect waves-light btn" id="btn" name="button">fetch</button>
+        <audio id="audio" controls>
+          <!-- <source id="source" type="audio/ogg"> -->
+          <source id="source" type="audio/mpeg">
+        </audio>
+    </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+    <script type="text/javascript" src="./js/plugins/skycons.js"></script>
+    <script type="text/javascript" src="./js/plugins/Chart.min.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>

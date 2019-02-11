@@ -1,0 +1,10 @@
+#
+node_modules/
+.env
+path/
+
+# text files
+object.txt
+
+# mp3
+Kalimba.mp3
